@@ -8,8 +8,8 @@ ENV TZ=Asia/Shanghai
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # 将自定义的Nginx站点配置文件复制到容器中
-#COPY default.conf /etc/nginx/conf.d/default.conf
-COPY 443.conf /etc/nginx/conf.d/default.conf
+COPY default.conf /etc/nginx/conf.d/default.conf
+#COPY 443.conf /etc/nginx/conf.d/default.conf
 
 # 暴露80和443端口
 EXPOSE 443
